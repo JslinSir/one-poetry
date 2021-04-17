@@ -1,0 +1,29 @@
+<!-- 诗词游戏 -->
+<view>
+	<view class="questionView">
+		<view class="title">第1关</view>
+		<view class="questionContent">[白日依山尽]</view>
+              <text class="tips">请接诗词的下一句</text>
+       </view>
+       
+       <!-- 答案选中区域 -->
+       <view class="anserContent">
+        <view class="anserContentItem">
+        </view>
+         <view class="anserContentItem">
+        </view>
+         <view class="anserContentItem">
+        </view>
+         <view class="anserContentItem">
+        </view>
+         <view class="anserContentItem">
+        </view>
+       </view>
+
+	<!-- 12个可选项 三排-->
+	<view class="anserSelect">
+        <block wx:for="{{contentArray}}" wx:key="unique">
+          <view class="anserItem">{{item}}</view>
+        </block>
+	</view>
+</view>

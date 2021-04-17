@@ -1,0 +1,11 @@
+{
+  
+  "usingComponents": {
+    "navTabBar":"/src/components/navTab/index",
+    "acountPage":"../../components/acountPage/index",
+    "indexPage":"../../components/indexPage/index",
+    "findPage":"../../components/findPage/index",
+    "shopPage":"../../components/shopPage/index",
+    "loginModal":"../../components/login/index"
+  }
+}

@@ -1,0 +1,31 @@
+ 
+export const categroData = [
+  {
+    title:'唐诗三百首',
+    color:'#ff7070',
+    type:'ts',
+    des:'唐诗',
+    id:'唐诗三百首'
+  },
+  {
+    title:'宋词三百首',
+    color:'#965f8a',
+    type:'sc',
+    des:'宋词',
+    id:'宋词三百首'
+  },
+  {
+    title:'三字经',
+    color:'#4f5e7f',
+    type:'szj',
+    des:'三字经',
+    id:'1s7k4c0c09c1009szj48a16a'
+  },
+  {
+    title:'百家姓',
+    color:'#4ac6b7',
+    type:'bjx',
+    des:'百家姓',
+    id:'9b0f4b0b55b1066jjx48b16b'
+  },
+]

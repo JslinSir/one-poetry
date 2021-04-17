@@ -1,0 +1,42 @@
+<navBar title="我的" />
+<view class="acountView">
+	<image src="../../../../assets/images/bg.png" class="acoutBg" mode="scaleToFill">
+		<!-- 账户信息 -->
+	
+  </image>
+	<scroll-view class="acountscroll" scroll-y="{{true}}"  refresher-triggered="{{pullStatus}}" refresher-enabled refresher-default-style="none"  bindrefresherrefresh="handleRefresh">
+			<view class="acountInfo">
+			<image class="avater" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../../../assets/images/icon_default_404.png'}}" />
+			<view class="textInfo">
+				<text class="nikes">{{userInfo.nickName}}</text>
+				<text class="signature">好好学习天天向上^_^</text>
+			</view>
+		</view>
+
+	<view class="optionView">
+		<view class="cellBox">
+			<view class="cellView">
+				<image class="left-icon" src="../../../../assets/images/start.png" />
+				<cell title="我的收藏" class-container="cell-contain"  bind:click="handleToMyLike" border />
+			</view>
+			<view class="cellView">
+				<image class="left-icon" src="../../../../assets/images/huibioa.png" />
+				<cell title="我的闯关" class-container="cell-contain"  bind:click="handleTogameHistoryList" border />
+			</view>
+				<view class="cellView relative">
+					<image class="left-icon" src="../../../../assets/images/callus.png" />
+					<cell title="联系我们" class-container="cell-contain" border/>
+						<button open-type="contact" class="openbtn" />
+				</view>
+				<view class="cellView relative">
+					<image class="left-icon" src="../../../../assets/images/icon_fead.png" />
+					<cell title="意见反馈" class-container="cell-contain" />
+						<button open-type="feedback" class="openbtn" />
+				</view>
+		</view>
+	</view>
+
+	<view bindtap="handleTogame" class="gamebtn">立即闯关</view>
+	</scroll-view>
+
+</view>

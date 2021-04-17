@@ -1,0 +1,32 @@
+.title-space-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 36rpx;
+  padding: 20rpx 0rpx;
+  color:#323232;
+}
+.left-title-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.space-title{
+  width: 10rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  background-color: #323232;
+}
+.look-more{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32rpx;
+  color:#999
+}
+.look-more-icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-top: 5rpx;
+}

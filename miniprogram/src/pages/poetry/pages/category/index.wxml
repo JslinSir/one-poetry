@@ -1,0 +1,65 @@
+<navBar title="诗词分类" bind:height="heightChange" />
+<view class="category-box">
+	<scroll-view
+	 class="category-scrol"
+	 scroll-left="{{transformX}}"
+	 scroll-with-animation="true"
+	 scroll-x
+	>
+		<view class="category-row">
+			<block wx:for="{{categoryData}}" wx:key="unique">
+				<view
+				 class="cate-item rect_item {{select===item?'select-cate-item':''}}"
+				 bind:tap="handleSelect"
+				 data-index="{{index}}"
+				 data-item="{{item}}"
+				>{{item}}
+				</view>
+			</block>
+		</view>
+	</scroll-view>
+	<view bind:tap="handleTogglePop">
+		<view class="toch-view-area" />
+		<image  class="cate-show-icont" src="/src/assets/images/icon_list_press_black.png" />
+	</view>
+
+</view>
+
+<!-- 诗词列表 -->
+<view class="poetry-list-box">
+	<block wx:for="{{dataList}}" wx:key="unique">
+		<poetryCard data="{{item}}"/>
+	</block>
+		<empty  wx:if="{{dataList.length === 0}}"/>
+</view>
+
+<!-- pop from top -->
+<view class="mask-view" style="top:{{navBarHeight}}px;" wx:if="{{popShow}}">
+
+	<view class="pop-view">
+		<view class="pop-head" bind:tap="handleClosePop">
+			<view class="pop-title">全部分类</view>
+			<image class="close-icon" src="/src/assets/images/icon_close_black.png" />
+		</view>
+		<view class="pop-cotent">
+			<view class="cate-pop-row">
+				<block wx:for="{{categoryData}}" wx:key="unique" >
+					<view
+					 class="cate-item mg30 {{select===item?'select-cate-item':''}}"
+					 bind:tap="handleSelect"
+					 data-index="{{index}}"
+					 data-item="{{item}}"
+					>{{item}}
+					</view>
+				</block>
+			</view>
+
+		</view>
+
+	</view>
+
+</view>
+
+<loadingMore loadingMore="{{loadingMore}}" />
+
+

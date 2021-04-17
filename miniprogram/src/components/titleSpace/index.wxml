@@ -1,0 +1,10 @@
+  <view class="title-space-view">
+  	<view class="left-title-view">
+  		<view class="space-title"></view>
+  		<text>{{title}}</text>
+  	</view>
+  	<view class="look-more" wx:if="{{hasMore}}">
+     <text>查看更多</text>
+     <image class="look-more-icon" src="/src/assets/images/icon_indicator_grey.png"></image>
+    </view>
+  </view>

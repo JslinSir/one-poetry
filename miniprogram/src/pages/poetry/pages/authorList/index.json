@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "authorCard":"/src/components/authorCard/index"
+  }
+}

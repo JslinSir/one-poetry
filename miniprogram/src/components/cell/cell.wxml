@@ -1,0 +1,20 @@
+<view class="container {{border ? 'border' : ''}} class-container" bind:tap="handleTap">
+  <view class="wrapper">
+    <view class="cell-left">
+      <!-- title 为空时，默认渲染 slots.title -->
+      <view class="cell-title" wx:if="{{title}}">
+      <text wx:if="{{require}}" class="redFont">*</text>{{title}}</view>
+      <slot name="title" wx:else/>
+      <!-- label 为空时，默认渲染 slots.label -->
+      <view class="cell-label" wx:if="{{label}}">{{label}}</view>
+      <slot name="label" wx:else/>
+    </view>
+    <view class="cell-right">
+      <!-- extra 为空时，默认渲染 slots.extra -->
+      <view class="cell-extra class-extra" wx:if="{{extra}}">{{extra}}</view>
+      <slot wx:else name="extra" />
+      <!-- props.disIcon 为 true 时，不渲染 icon -->
+      <image class="cell-icon" hidden="{{disIcon}}" src="{{icon}}" />
+    </view>
+  </view>
+</view>

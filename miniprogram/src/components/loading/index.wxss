@@ -1,0 +1,19 @@
+.j-loading {
+    height: 40rpx;
+    width: 40rpx;
+    border-radius: 50%;
+    border:4rpx solid #cccccc;
+
+    /* border-bottom-color:transparent; */
+    animation: rotate .6s linear infinite;
+  
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}

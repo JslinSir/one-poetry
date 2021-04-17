@@ -1,0 +1,14 @@
+
+	<view class="poetry-list-item" bindtap="handleToDetail">
+		<view class="poetry-list-item-left">
+			<text class="poetry-title">{{data.name}}</text>
+			<text class="poetry-dynati">{{data.dynasty}}<text class="poetry-dynati linemg">|</text><text class="poetry-dynati">{{data.author}}</text></text>
+		</view>
+		<view class="poetry-list-item-right">
+			<view class="poetry-tags-view">
+				<view class="poetry-tags" wx:if="{{data.translate.length>0}}">译</view>
+				<view class="poetry-tags" wx:if="{{data.appreciation.length>0}}">赏</view>
+				<view class="poetry-tags" wx:if="{{data.notes.lenght>0}}">注</view>
+			</view>
+		</view>
+	</view>

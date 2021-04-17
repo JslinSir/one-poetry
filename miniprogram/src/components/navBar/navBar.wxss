@@ -1,0 +1,84 @@
+/* common/components/navBar/navBar.wxss */
+
+.container {
+  width: 100vw;
+  min-height: 64px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+}
+
+.barContainer {
+  width: 100vw;
+  min-height: 64px;
+}
+
+.barView {
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+
+  text-align: center;
+  line-height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftView {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.titleView {
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.rightView {
+  width: 100px;
+  height: 44px;
+}
+
+/* 占位 */
+.placeholderContainer {
+  width: 100vw;
+  min-height: 64px;
+}
+
+
+/* .backView {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+} */
+
+.topView {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  /* height: 30px; */
+  /* background: orange; */
+}
+
+.gradient {
+  background-color: #FAD961 !important;
+  background-image: linear-gradient(20deg, #FAD961 0%, #F76B1C 100%) !important;
+  background-image: -webkit-linear-gradient(20deg, #FAD961 0%, #F76B1C 100%) !important;
+  background-image: -moz-linear-gradient(20deg, #FAD961 0%, #F76B1C 100%) !important;
+  background-image: -o-linear-gradient(20deg, #FAD961 0%, #F76B1C 100%) !important;
+}

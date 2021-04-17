@@ -1,0 +1,12 @@
+
+<view class="{{mask?'smile-container-loading':''}}" wx:if="{{showLoading}}">
+<view class="expressionLoadingView">
+  <!-- 眼睛 -->
+  <view class="eyesView">
+    <view class="eye"/>
+     <view class="eye ml"/>
+  </view>
+  <!-- 嘴巴 -->
+  <view class="{{animotion?'smileanimotion':''}} mouse"/>
+</view>
+</view>

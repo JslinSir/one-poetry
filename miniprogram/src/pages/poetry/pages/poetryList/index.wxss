@@ -1,0 +1,9 @@
+page{
+  background-color: #fafafa;
+}
+
+
+
+.poetry-list-box{
+  padding: 30rpx;
+}

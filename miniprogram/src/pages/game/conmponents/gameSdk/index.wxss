@@ -1,0 +1,41 @@
+.questionView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.anserContent {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80rpx;
+  padding: 0 120rpx;
+}
+
+.anserContentItem {
+  width: 110rpx;
+  height: 110rpx;
+  border: 1rpx solid #eee;
+}
+
+.anserSelect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 120rpx;
+}
+
+.anserItem {
+  width: 110rpx;
+  height: 110rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: coral;
+  margin-top: 30rpx;
+}

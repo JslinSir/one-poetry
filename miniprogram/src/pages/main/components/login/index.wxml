@@ -1,0 +1,14 @@
+<!-- 登录modal -->
+
+
+<view  class="login-modal-mask" wx:if="{{isShow}}">
+
+ <view  class="login-modal-view">
+     <view class="logo-icon-view">
+       <image class="logo-icon"  src="/src/assets/images/logo.jpeg"/>
+     </view>
+     <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+ </view>
+      
+
+</view>

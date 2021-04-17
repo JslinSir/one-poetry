@@ -1,0 +1,33 @@
+<!--common/components/navBar/navBar.wxml-->
+
+<view class="container" style="min-height:{{statusBarHeight + navBarHeight + (slotHeight - 0)}}px">
+  <!-- 导航栏 -->
+  <view class="barContainer {{isGradient?'gradient':''}}" style="background:{{background}};min-height:{{statusBarHeight + navBarHeight}}px">
+    <view class="barView" style="top:{{statusBarHeight}}px;">
+      <view class="leftView class-leftview" catchtap="handleBack">
+        <block wx:if="{{isCustomLeft}}">
+          <!-- 自定义左按钮 -->
+          <slot name="leftView"></slot>
+        </block>
+        <block wx:elif="{{showBack}}">
+          <image src="/src/assets/images/icon_nav_back_black.png" style="width:20px;height:20px;" />
+        </block>
+        <block wx:if="{{isCustomLeft === false && showBack === false && showHome}}">
+          <image bindtap="backTap" src="/src/assets/images/icon_tab_home_def.png" style="width:20px;height:20px;" />
+        </block>
+      </view>
+      
+      <view class="titleView" style="color:{{color}}">{{title}}</view>
+      <view class="rightView" />
+    </view>
+  </view>
+  
+  <!-- 吸顶 -->
+  <view wx:if="{{(slotHeight - 0) > 0}}" style="height:{{slotHeight}}px;" class="topView" >
+    <slot name="topView" />
+  </view>
+</view>
+
+
+<!-- 占位 -->
+<view class="placeholderContainer" style="min-height:{{statusBarHeight + navBarHeight + (slotHeight - 0)}}px" />

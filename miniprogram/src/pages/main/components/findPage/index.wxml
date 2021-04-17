@@ -1,0 +1,82 @@
+<navBar class-leftview="class-leftview" isCustomLeft isGradient>
+	<view slot='leftView' class="left-nav-view">
+		<text class="logo-text">一诗词</text>
+		<view class="search-box" bind:tap="handleToCate">
+			<image class="search-icon" src="/src/assets/images/icon_search_dark.png" />
+			<text class="search-placehold">古诗词搜索</text>
+		</view>
+	</view>
+</navBar>
+<!-- <text>诗词的书籍  相关，成语故事啊</text>
+<text>一些学习方法啊</text> -->
+
+<scrolViewList bind:pulling="handlePulling" id="scrolViewListIdFindPage" wx:if="{{!skeletonLoading}}">
+	<view slot="renderContent" class="scrol-content-box">
+		<!-- 轮播图 -->
+		<swiper class="carousel-view" easing-function="linear" autoplay>
+			<swiper-item
+			 wx:for="{{data}}"
+			 wx:key="unique"
+			 class="carousel-view-item"
+			 data-index="{{index}}"
+			 bind:tap="handleToDetail"
+			>
+				<image class="carousel-bg-img" src="{{item.imgSrc}}" />
+				<view class="carousel-tips">
+					<text class="carousel-tips-text">{{item.title}}</text>
+				</view>
+			</swiper-item>
+		</swiper>
+		<!-- <block wx:if="{{!skeletonLoading}}">
+			<view class="bannerBox" wx:for="{{data}}" wx:key="unique">
+				<image class="poetbanner" src="{{item.imgSrc}}" />
+				<view class="bannercontent">
+					<text class="readTitle">{{item.title}}</text>
+					<text class="readContent">{{item.cotent}}</text>
+				</view>
+			</view>
+		</block> -->
+
+		<!-- 发现页金刚区域布局 -->
+		<view class="categro-box">
+			<block wx:for="{{categroData}}" wx:key="unique">
+				<view class="categro-item" bind:tap="handleJump" data-item="{{item}}">
+					<!-- <image class="categro-icon" src="/src/assets/images/null.jpg" /> -->
+					<view class="categro-icon" style="background-color:{{item.color}};">
+						{{item.des}}
+					</view>
+					<text class="categro-text">{{item.title}}</text>
+				</view>
+			</block>
+		</view>
+		<!-- 诗词分类区 -->
+		<!-- 作者展示区 -->
+		<view class="title-space" bindtap="handleToAuthList">
+			<titleSpace title="历代大诗人" hasMore />
+		</view>
+		<view class="author-box">
+			<block wx:for="{{authorList}}" wx:key="unique">
+				<authorCard data="{{item}}" />
+			</block>
+		</view>
+
+		<!-- 诗词分类 -->
+		<view class="title-space" bindtap="handleToPoetryList">
+			<titleSpace title="诗词分类" hasMore />
+		</view>
+		<view class="poety-catory-view" bindtap="handleToPoetryList">
+			<text>诗词分类</text>
+		</view>
+		<view style="width:100vw;height:60px;"></view>
+      <!-- <view class="foot-tips">一诗词</view> -->
+	</view>
+
+</scrolViewList>
+<block wx:if="{{skeletonLoading}}">
+	<view class="skeletonView">
+		<skeleton/>
+		<skeleton/>
+		<skeleton/>
+	</view>
+</block>
+

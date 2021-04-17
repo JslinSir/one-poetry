@@ -1,0 +1,9 @@
+	<view class="author-item" bind:tap="handleToAuthorDetail">
+		<view class="author-img-view">
+			<image class="author-img" src="{{data.avatar}}" wx:if="{{data.avatar}}"/>
+			<view class="author-img-default" wx:else><text >{{data.name}}</text></view>
+		</view>
+		<text class="author-text">{{data.name}}</text>
+		<text class="author-text author-grey">朝代：{{data.dynasty}}</text>
+		<text class="author-text author-detail">生平：{{data.lifetime}}</text>
+	</view>

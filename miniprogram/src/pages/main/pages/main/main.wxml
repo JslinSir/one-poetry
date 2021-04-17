@@ -1,0 +1,16 @@
+
+<!-- 首页 -->
+ <view hidden="{{curentTab!=0}}"><indexPage id="indexPage" hidden="{{curentTab!=0}}"/></view>
+
+<!-- 发现模块 -->
+ <view hidden="{{curentTab!=1}}"><findPage id="findPage" hidden="{{curentTab!=1}}"/></view>
+ 
+ <!-- 商城模块 跳转我的小店-->
+ <view hidden="{{curentTab!=2}}"><shopPage id="shopPage" hidden="{{curentTab!=2}}"/></view>
+<!-- 我的模块 -->
+ <view hidden="{{curentTab!=3}}"><acountPage id="acountPage" hidden="{{curentTab!=3}}"/></view>
+
+<!-- 底部导航 -->
+<navTabBar  tab="{{tabData}}" curentTab="{{curentTab}}" bind:change="handleTabChange"/>
+
+<loginModal />

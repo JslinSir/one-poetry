@@ -1,0 +1,163 @@
+.pullscrolView{
+  position: relative;
+}
+.loading-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600rpx;
+}
+.dateView {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   position: absolute;
+   left:108rpx;
+   top:50rpx;
+}
+.day {
+  font-size: 60rpx;
+  color:#666;
+}
+.rightDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10rpx;
+}
+.week {
+  font-size: 24rpx;
+  color:#666;
+}
+.month {
+  font-size: 24rpx;
+  color:#666;
+}
+.swiper-view {
+  width: 100vw;
+  background-color:#fafafa;
+}
+.swiper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-contain {
+ position: relative;
+ width: 70vw;
+ height:800rpx;
+ border-radius: 20rpx;
+ background: #fff;
+ animation: popup-fadein .4s;
+}
+.text-box {
+   padding: 30rpx;
+   display: flex; 
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   writing-mode:vertical-rl; 
+   margin-left: 24rpx;
+}
+.contain-text {
+  width: 40rpx;
+  font-size: 28rpx;
+  display:block;
+  padding: 10rpx;
+  width: 100%;
+}
+.potry-title{
+  position: absolute;
+  font-size: 28rpx;
+  right: 88rpx;
+  top: 100rpx;
+}
+.contain-bottom {
+  position: absolute;
+  bottom:30px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.tipsview{
+  font-size: 24rpx;
+  color:#fff;
+  text-align: center;
+  border-radius: 9rpx;
+  margin-top: 10rpx;
+  background-color: #B22222;
+}
+
+.sm-text {
+  width: 40rpx;
+  font-size: 24rpx;
+  text-align: center;
+  display:block;
+}
+.next {
+  padding-top: 0;
+  margin-left: 50rpx;
+}
+.animotionView {
+  position: fixed;
+  right: 17px;
+}
+.imganimaotion {
+  width: 64rpx;
+  height: 64rpx;
+  transform: rotate(-15deg);
+  transform-origin: top center;
+  animation: animotion_ 5s linear infinite
+}
+.lastmore{
+  display: flex;
+  flex-direction: column;
+
+}
+.lookMoreIcon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 26rpx;
+
+}
+
+@keyframes animotion_{
+  from{
+    transform: rotate(0);
+  }
+  40%{
+    transform: rotate(20deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  80%{
+    transform: rotate(-20deg);
+  }
+  to{
+    transform: rotate(0);
+  }
+  }
+
+  @keyframes popup-fadein {
+    0% {
+        transform: scale(.8);
+        opacity: 0
+    }
+  
+    50% {
+        transform: scale(1.1)
+    }
+  
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+  }

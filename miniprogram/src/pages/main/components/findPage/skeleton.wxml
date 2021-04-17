@@ -1,0 +1,6 @@
+
+<view class="tuwenBox">
+  <view class="tuwenImage skloading"/>
+  <view class="tuwenTitle skloading" />
+  <view  class="tuwencotent skloading" />
+</view>

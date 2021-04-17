@@ -1,0 +1,9 @@
+<!-- 完整loading 高亮 -->
+<block wx:if="{{type==='default'|| type==='long'}}">
+ <view wx:if="{{loading}}" class="j-loading" style="width:{{size}}px;height:{{size}}px;border-color:{{color}};border-bottom-color:transparent;animation-duration:{{duration}}s;" />
+</block>
+<!-- 残缺 高亮 -->
+<block wx:if="{{type==='short'}}">
+	<view wx:if="{{loading}}" class="j-loading" style="width:{{size}}px;height:{{size}}px;border-bottom-color:{{color}};animation-duration:{{duration}}s;" />
+</block>
+

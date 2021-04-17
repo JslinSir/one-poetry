@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "scrolViewList":"../../../../components/scrollViewList/index",
+    "skeleton":"./skeleton",
+    "titleSpace":"/src/components/titleSpace/index",
+    "authorCard":"/src/components/authorCard/index"
+  }
+}

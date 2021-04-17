@@ -1,0 +1,59 @@
+<navBar title="诗文赏析" />
+
+<view class="poetry-detail-box">
+	<view class="poetry-content">
+		<text class="poetry-title">{{data.name}}</text>
+		<text class="poetry-author">{{data.dynasty}}：{{data.author}}</text>
+		<rich-text
+		 wx:for="{{data.content}}"
+		 wx:key="unique"
+		 class="poetry-text"
+		 nodes="{{item}}"
+		/>
+	</view>
+
+	<!-- 译文及注释 -->
+	<view class="poetry-translate">
+		<!-- 译文 translate -->
+		<titleSpace title="译文" wx:if="{{data.translate.length>0}}" />
+		<rich-text
+		 wx:for="{{data.translate}}"
+		 wx:key="unique"
+		 class="poetry-text"
+		 nodes="{{item}}"
+		/>
+		<!-- 注释  notes-->
+		<titleSpace title="注释" wx:if="{{data.notes.length>0}}" />
+		<rich-text
+		 wx:for="{{data.notes}}"
+		 wx:key="unique"
+		 class="poetry-text"
+		 nodes="{{item}}"
+		/>
+		<!-- 展开收起功能 -->
+		<!-- 创作背景 -->
+		<!-- 赏析 appreciaction-->
+		<titleSpace title="创作背景" wx:if="{{data.appreciation.length>0}}" />
+		<rich-text
+		 wx:for="{{data.appreciation}}"
+		 wx:key="unique"
+		 class="poetry-text"
+		 nodes="{{item}}"
+		/>
+	</view>
+
+  
+</view>
+
+
+<!-- 收藏按钮  -->
+<!-- <view class="like-btn"  bindtap="handleLike">
+		<image class="like-icon" src='../../../../assets/images/icon_commodityfocus_off.png' />
+	<text >收藏</text>
+</view> -->
+
+<!-- 作者简介入口 -->
+<!-- <view class="author-link-view" bindtap="handleToAuthorDetail">
+	<image class="author-link" src='../../../../assets/images/null.jpg' />
+</view> -->
+

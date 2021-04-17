@@ -1,0 +1,5 @@
+<view  style="width:{{right}}px;height:{{height}}px;" >
+  <slot/>
+</view>
+
+<loading id="loading" />

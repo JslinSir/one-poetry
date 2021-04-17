@@ -1,0 +1,11 @@
+<navBar title="详情" />
+<view class="detail-box">
+	<view class="loading-view" wx:if="{{loading}}">
+		<localLoading type='short' size="25" loading />
+	</view>
+	<block wx:else>
+		<view class="detail-title">{{detail.title}}</view>
+		<rich-text class="detail-text" nodes="{{detail.cotent}}" />
+	</block>
+</view>
+

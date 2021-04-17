@@ -1,0 +1,56 @@
+<navBar title="一诗词" />
+<scrolViewList bind:pulling="handlePulling" id="scrolViewListId">
+	<view slot="renderContent" class="pullscrolView">
+		<view class="loading-view" wx:if="{{loading}}">
+		  <localLoading type='short' size="25" loading />
+		</view>	
+		<block wx:if="{{!loading}}">
+			<!-- 日期显示 -->
+			<view class="dateView">
+				<view class="day">{{dateInfo.day}}</view>
+				<view class="rightDate">
+					<text class="week">{{dateInfo.week}}</text>
+					<text class="month">{{dateInfo.month}}</text>
+				</view>
+			</view>
+			<!-- 动画 -->
+			<!-- <view class="animotionView">
+				<image class="imganimaotion" src="../../../../assets/images/zgj.png" />
+			</view> -->
+			<swiper
+			 class="swiper-view"
+			 easing-function="linear"
+			 bindchange="handleSwiperChange"
+			 style="height:{{swiperHeight}}px;"
+			>
+				<block wx:for="{{list}}" wx:key="unique">
+					<swiper-item class="swiper-item" bind:tap="handleToDetail" data-item="{{item}}">
+						<view class="item-contain">
+							<view class="text-box">
+								<!-- 标题 -->
+								<view class="potry-title contain-text">{{item.name}}</view>
+								<rich-text
+								 wx:for="{{item.content}}"
+								 wx:for-item="content"
+								 wx:key="unique"
+								 class="contain-text"
+								 nodes="{{content}}"
+								/>
+							</view>
+							<!-- 作者信息 -->
+							<view class="contain-bottom">
+								<text class="sm-text">{{item.author}}</text>
+								<view class="tipsview" wx:if="{{item.dynasty}}">{{item.dynasty}}</view>
+							</view>
+						</view>
+					</swiper-item>
+				</block>
+				<swiper-item class="swiper-item" wx:if="{{list.length>0}}" bind:tap="handleToMore">
+					<view class="text-box">查看更多</view>
+					<image class="lookMoreIcon" src="/src/assets/images/icon_indicator_grey.png" />
+				</swiper-item>
+			</swiper>
+		</block>
+	</view>
+</scrolViewList>
+

@@ -1,0 +1,8 @@
+<view class="page-content" wx:if="{{show}}">
+	<view class="null-box">
+        <text class="null-text first">空~</text>
+        <text class="null-text second">空~</text>
+		<image class="nullIcon" src="/src/assets/images/null.jpg" />
+	</view>
+
+</view>

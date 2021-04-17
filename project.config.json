@@ -1,0 +1,129 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wx02fd37d60ac8a42a",
+  "projectname": "一诗词",
+  "libVersion": "2.12.2",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "compileType": "miniprogram",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "src/pages/game/pages/history/index",
+          "pathName": "src/pages/game/pages/history/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "src/pages/poetry/pages/bannerDetail/index",
+          "pathName": "src/pages/poetry/pages/bannerDetail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "src/pages/mine/likeList/index",
+          "pathName": "src/pages/mine/likeList/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "src/pages/poetry/pages/authorList/index",
+          "pathName": "src/pages/poetry/pages/authorList/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "src/pages/poetry/pages/category/index",
+          "pathName": "src/pages/poetry/pages/category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "src/pages/poetry/pages/authorList/index",
+          "pathName": "src/pages/poetry/pages/authorList/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "src/pages/poetry/pages/poetryDetail/index",
+          "pathName": "src/pages/poetry/pages/poetryDetail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "src/pages/poetry/pages/category/index",
+          "pathName": "src/pages/poetry/pages/category/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

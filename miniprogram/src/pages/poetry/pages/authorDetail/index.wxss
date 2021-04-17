@@ -1,0 +1,52 @@
+.indtro-contain{
+  padding: 30rpx;
+  margin-bottom: 120rpx;
+}
+
+.intro-img-info{
+
+}
+.author-title{
+  font-size: 36rpx;
+  color:#000
+}
+.author-dyntiy{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.author-life{
+  font-size: 32rpx;
+  color:#323232
+}
+
+.avatore{
+  float:left;
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+}
+.intro-item{
+  margin-top: 20rpx;
+}
+.intro-item-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  font-size: 36rpx;
+  color:#323232;
+}
+.space-title{
+  width: 10rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  background-color: #323232;
+}
+.intro-cotent-text{
+  font-size: 28rpx;
+  color:#999;
+}
+.space-view{
+  height: 30rpx;
+  width: 100vw;
+}

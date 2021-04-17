@@ -1,0 +1,16 @@
+<!-- title 动态改变 -->
+<navBar title="历代大诗人" />
+
+<!-- 和首页一样的排版 诗词列表 -->
+<view class="author-list-view">
+	<block wx:for="{{dataList}}" wx:key="unique">
+		<authorCard data="{{item}}" />
+	</block>
+	<loadingMore loadingMore="{{loadingMore}}" />
+
+</view>
+
+<view  class="default-show-view" wx:if="{{dataList.length===0}}">
+  <image  src="/src/assets/images/logo.jpeg" class="default-show" />
+</view>
+

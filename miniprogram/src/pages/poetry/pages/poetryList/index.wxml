@@ -1,0 +1,11 @@
+<navBar title="{{id}}" />
+
+<!-- 诗词列表 -->
+<view class="poetry-list-box">
+	<block wx:for="{{dataList}}" wx:key="unique">
+		<poetryCard data="{{item}}"/>
+	</block>
+		<empty  wx:if="{{dataList.length === 0}}"/>
+</view>
+
+<loadingMore loadingMore="{{loadingMore}}" />

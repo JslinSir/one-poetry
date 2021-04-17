@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "gameSdk":"../../conmponents/gameSdk/index"
+  }
+}

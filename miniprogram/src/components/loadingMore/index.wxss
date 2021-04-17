@@ -1,0 +1,21 @@
+.author-list-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+.loading-more{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 30rpx 0;
+}
+.loading-more-text{
+  font-size: 28rpx;
+  color:#999999;
+  margin-right: 10rpx;
+}

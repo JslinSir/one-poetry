@@ -1,0 +1,24 @@
+<view class="scroll-contain">
+ 	<scroll-view
+    wx:if="{{height>0}}"
+    scroll-y="true" 
+    refresher-enabled="{{true}}"
+    refresher-threshold="{{100}}"
+    refresher-background="{{background}}"
+    refresher-default-style="none"
+    refresher-triggered="{{pullStatus}}"
+    bindrefresherpulling="handlePull"
+    bindrefresherrefresh="handleRefresh"
+    bindrefresherrestore="handleRestore"
+    bindrefresherabort="handleAbort"
+    bindscrolltolower="handleMore"
+    style="height:{{height-55-30}}px;width: 100%;">
+    <view slot="refresher" class="refresher">
+       <loading mask="{{false}}" animotion="{{smile}}"  showLoading/>
+    </view>
+   <slot name="renderContent" />
+    <view wx:if="{{loadMore}}" class="scroll-bottom">
+      <loadingMore loadingMore="{{loadMore}}"/>
+     </view>
+ 	</scroll-view>
+ </view>

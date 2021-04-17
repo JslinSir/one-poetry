@@ -1,0 +1,117 @@
+
+.bgScreen{
+  width: 100vw;
+  height: 100vh;
+
+}
+.acountscroll{
+  position: absolute;
+  width: 100vw;
+  height: 80%;
+  top:280rpx;
+}
+.acountView {
+
+
+}
+.acoutBg {
+   width: 100vw;
+   height:300rpx
+}
+.acountInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  padding:30rpx 20rpx;
+  margin: 0 24rpx;
+  z-index: 2;
+  animation: move-option .8s ease 1;
+}
+.avater{
+width: 120rpx;
+height: 120rpx;
+border-radius: 60rpx;
+border: 1rpx solid #fafafa;
+}
+.textInfo {
+ display: flex;
+ flex-direction: column;
+ margin-left: 20rpx;
+ 
+}
+.nikes {
+  font-size: 36rpx;
+  color:#323232;
+}
+.signature {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.optionView{
+  display: flex;
+  flex-direction: column;
+  margin: 60rpx 24rpx 0 24rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  animation: move-option 1s linear 1;
+}
+.cellBox{
+  padding: 0 24rpx;
+}
+.cellView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}
+.cell-contain{
+  width: 80vw;
+}
+.gamebtn{
+  position: absolute;
+  left:60rpx;
+  right:60rpx;
+  line-height: 88rpx;
+  bottom:260rpx;
+  text-align: center;
+  border-radius: 24rpx;
+  font-size: 32rpx;
+  color:#fff;
+  background-color: #FF7F24;
+  animation: move 1s infinite;
+  
+}
+.relative {
+  position: relative;
+}
+.openbtn{
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+@keyframes move {
+  50% {margin: -10rpx;}
+}
+
+@keyframes move-option{
+  from{
+    transform: translateY(10px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+  }

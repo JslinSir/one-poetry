@@ -1,0 +1,5 @@
+<view class="loading-more" wx:if="{{loadingMore}}">
+	<text class="loading-more-text">{{text}}</text>
+	<localLoading size="14" loading />
+</view>
+

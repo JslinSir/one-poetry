@@ -1,0 +1,13 @@
+<navBar title="诗人简介" />
+<view class="indtro-contain">
+<view class="intro-img-info">
+ <image class="avatore" src="{{info.avatar}}"></image>
+ <text class="author-title">{{info.name}}<text class="author-dyntiy" wx:if="{{info.dynasty}}">({{info.dynasty}})</text></text>
+ <view class="author-life">{{info.lifetime}}</view>
+</view>
+  <view class="intro-item" wx:for="{{info.describe}}" wx:key="unique" >
+   <titleSpace title="{{item.type}}" wx:if="{{item.content.length>0}}"/>
+   <view class="space-view"/>
+   <rich-text class="intro-cotent-text" wx:if="{{item.content.length>0}}" wx:for="{{item.content}}" wx:for-item="citem" wx:key="unique"  nodes="{{citem}}" />
+  </view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "poetryCard":"/src/components/poetryCard/index"
+  }
+}

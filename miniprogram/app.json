@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "src/pages/main/pages/main/main",
+    "src/pages/mine/likeList/index"
+  ],
+  "subPackages": [
+    {
+      "root": "src/pages/game",
+      "pages": [
+        "pages/index/index",
+        "pages/history/index"
+      ]
+    },
+    {
+      "root": "src/pages/poetry",
+      "pages": [
+        "pages/index/index",
+        "pages/bannerDetail/index",
+        "pages/poetryDetail/index",
+        "pages/poetryList/index",
+        "pages/authorList/index",
+        "pages/authorDetail/index",
+        "pages/category/index"
+        
+      ]
+    }
+  ],
+  "usingComponents": {
+    "navBar": "src/components/navBar/navBar",
+    "cell": "src/components/cell/cell",
+    "safeAreaView": "src/components/safeAreaView/index",
+    "loading": "src/components/smileLoading/index",
+    "localLoading": "src/components/loading/index",
+    "empty": "src/components/empty/index",
+    "loadingMore": "src/components/loadingMore/index"
+  },
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序需要使用您的位置信息获取附近的门店"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

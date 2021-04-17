@@ -1,0 +1,9 @@
+<!-- <navBar title="杂货铺" color='#fff' background='transparent'/> -->
+
+<view class="banner-view">
+  <image class="banner-shop" src="cloud://jslin-fwqc3.6a73-jslin-fwqc3-1302163217/store-banner.jpg" />
+
+  <view class="goshop-btn" bindtap="handleToShop">立即前往</view>
+</view>
+
+

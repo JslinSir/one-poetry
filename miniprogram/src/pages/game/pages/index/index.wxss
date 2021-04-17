@@ -1,0 +1,36 @@
+
+.relative{
+  position: relative;
+}
+.musicIcon{
+  position: absolute;
+  right: 30rpx;
+  top:30rpx;
+  width: 32rpx;
+  height:32rpx;
+}
+
+.rotate{
+  animation: rotate .7s linear infinite
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}

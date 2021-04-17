@@ -1,0 +1,51 @@
+.scroll-view{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 200rpx;
+  background-color: #FAFAD2;
+}
+.timeLineBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.line-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 58rpx;
+  position: relative;
+}
+.range{
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 14rpx;
+  position: relative;
+  border: 1rpx solid red;
+}
+.lin-time-text{
+  font-size: 28rpx;
+  color:#999;
+  margin-left: 10rpx;
+}
+.range::after{
+  content: '';
+  position: absolute;
+  left:14rpx;
+  height: 60rpx;
+  width: 2rpx;
+  top:29rpx;
+  background-color: red;
+}
+.positionright{
+  position: absolute;
+  left:30rpx;
+  width: 120rpx;
+  
+}
+.positionleft{
+  position: absolute;
+  right:30rpx;
+  width: 120rpx;
+}

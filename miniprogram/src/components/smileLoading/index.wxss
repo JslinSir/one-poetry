@@ -1,0 +1,66 @@
+
+.smile-container-loading{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0
+}
+
+.expressionLoadingView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:100px;
+}
+.eyesView {
+  display: flex;
+  flex-direction: row;
+
+}
+.eye {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 8rpx;
+  background-color: #ff6727;
+}
+
+.mouse {
+  width: 60rpx;
+  height: 30rpx;
+  border: 6rpx solid #ff6727;
+  border-top: 1rpx solid transparent;
+  margin-top: 30rpx;
+  border-bottom-right-radius: 120rpx;
+  border-bottom-left-radius: 120rpx;
+  
+}
+.smileanimotion{
+  animation: animotion_rotate 1.2s linear infinite
+}
+
+.ml{
+  margin-left: 16rpx;
+}
+
+@keyframes animotion_rotate{
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  40%{
+    -webkit-transform: rotate(-110deg);
+  }
+  50%{
+    -webkit-transform: rotate(-180deg);
+  }
+  60%{
+    -webkit-transform: rotate(-200deg);
+  }
+  80%{
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+  }

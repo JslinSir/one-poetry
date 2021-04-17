@@ -1,0 +1,10 @@
+<navBar title="游戏闯关" />
+<view class="relative">
+  <image bindtap="handleMusicAudio" class="musicIcon {{animotion?'rotate':''}}" src="../../../../assets/images/music.png"/>
+</view>
+<!-- 
+ <view class="title">白日依山尽</view>
+ <view class="title">请 接诗词的下一句</view> -->
+
+ <gameSdk />
+ 

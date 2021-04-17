@@ -1,0 +1,52 @@
+.container {
+  background: #fff;
+  padding: 30rpx 0;
+}
+
+.container.border {
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cell-left {
+  flex: 1;
+}
+.left-icon{
+  margin-right: 10rpx;
+}
+
+.cell-title {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #323232;
+}
+
+.cell-label {
+  font-size: 24rpx;
+  line-height: 33rpx;
+  color: #999;
+}
+
+.cell-right {
+  display: flex;
+  align-items: center;
+}
+
+.cell-extra {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #323232;
+}
+
+.cell-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 8rpx;
+}
+.redFont {
+  color:#FE473C
+}

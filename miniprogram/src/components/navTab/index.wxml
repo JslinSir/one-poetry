@@ -1,0 +1,9 @@
+
+	<view class="navtabBox" style="padding-bottom:{{remainHeight}}px;">
+		<block wx:for="{{tab}}" wx:key="unique">
+			<view class="navTabItem" style="width:{{100/tab.length}}%;" data-name="{{item.name}}" data-index="{{index}}" bindtap="handleTabClick">
+				<image class="navTabIcon {{tabIndex==index?'navselectColor':''}}" src="{{tabIndex==index?item.iconSelect:item.icon}}" />
+				<text class="navTabText {{tabIndex==index?'navselectColor':''}}">{{item.name}}</text>
+			</view>
+		</block>
+	</view>
